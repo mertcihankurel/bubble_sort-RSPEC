@@ -14,3 +14,10 @@ def bubble_sort(array)
         # With each full iteration one more last element is already set
         # When we have n iteration, n elements from the end of the array are already set
         break if !next_element && iteration > array.length - index - 1
+
+        if element > next_element
+            sorted = false
+    
+            array[index] = next_element
+            array[index + 1] = element
+            next
