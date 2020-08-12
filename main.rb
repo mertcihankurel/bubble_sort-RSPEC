@@ -21,3 +21,15 @@ def bubble_sort(array)
             array[index] = next_element
             array[index + 1] = element
             next
+        end
+        next
+      end
+  
+      # If after a full iteration the sorted is still true we can break the loop
+      break if sorted == true
+    end
+  
+    array
+  end
+  
+  p bubble_sort([45, 1, 5, 2, -20, 56, 999, 34, 46, 64])
